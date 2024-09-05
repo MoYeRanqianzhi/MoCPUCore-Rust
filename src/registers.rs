@@ -58,16 +58,3 @@ impl Registers {
         }
     }
 }
-
-// struct AsciiOut;
-//
-// impl Write for AsciiOut {
-//     fn write(&mut self, buf: &[u8]) -> Result<usize> {
-//         stdout().write()
-//     }
-//
-//     fn flush(&mut self) -> Result<()> {
-//         stdout().flush()
-//     }
-// }
-

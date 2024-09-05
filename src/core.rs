@@ -86,8 +86,7 @@ impl MoCPU {
         if op & 32 == 0 {
             let operation = self.operations.get(&op).expect("无效的操作码");
             self.registers.set(target, operation(v1, v2));
-        }
-        else {
+        } else {
             let condition = self.conditions.get(&op).expect("无效的条件码");
             if condition(v1, v2) {
                 self.pc.jump(target);
