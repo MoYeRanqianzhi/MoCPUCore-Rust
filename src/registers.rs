@@ -42,7 +42,7 @@ impl Registers {
                     Err(_) => panic!("输入流读取错误, 无法恢复!!!")
                 }
             }
-            _ => self.registers[index as usize]
+            reg => self.registers[reg as usize]
         }
     }
 
